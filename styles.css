@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Start of navigation bar*/
+.navBar{
+  width: 100%;
+   padding: 20px;
+   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+   background-color: #fff;
+}
+
+.navBar a{
+  color: #F37A1F;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #F37A1F;
+  padding: 15px;
+  border-radius: 20px;
+}
+/* End of navigation bar*/
+
+/*Start of home section*/
+#home{
+  background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)) ,url(assets/images/wood-2879254__340.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+   
+}
+
+#home h1, p {
+ text-align: center;
+ position: relative;
+top: 20px;
+}
+#home p{
+ position: relative;
+ top: 40px;
+}
+
+.payments{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  column-gap: 50px;
+}
+
+.cost{
+  border:  2px solid #F37A1F;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account{
+ border: 2px solid #FFCD84;
+ width: 350px;
+ height: 350px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account li{
+  position: relative;
+  left: 20px;
+}
+
+ul{
+  position: relative;
+  top: 50px;
+  font-family: 'Trirong', serif;
+}
+
+.about{
+  padding-top: 50px;
+}
+
+
+#about{
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* End of home section*/
+
+/* Start of product section*/
+#product{
+  background-color: #FFE4BC;
+  width: 100%;
+  height: 600px;
+  padding-top: 50px;
+}
+
+.product{
+display: flex;
+justify-content: center;
+position: relative;
+top: 30px;
+width: 100%;
+}
+
+th{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .product table, th, td{
+  border: 1px solid white;
+  padding: 20px 100px 20px 100px;
+  }
+
+.size{
+font-family: 'Trirong', serif;
+font-size: 25px;
+}
+
+.price{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+/* End of product section*/
+
+/* Start of scroll top button*/
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 206vh;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-image: url(assets/images/5229139.png);
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+#myBtn:hover{
+  background-color: #555;
+}
+/* End of scroll top button*/
+
+/* Start of contact section*/
+
+.text-field {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+    top: 60px;
+    bottom: 80px;
+  }
+  
+  .text-field-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+    top: 60px;
+  }
+ 
+  form {
+    box-shadow: 0px -15px 10px -15px black;
+    position: relative;
+    top: 50px;
+    background-color: #ffffff;
+  }
+  
+  /* Start of styling for input fields*/
+  #name,
+  #email {
+    width: 300px;
+    height: 30px;
+  }
+  
+  
+  #subject,
+  #message {
+    width: 630px;
+  }
+  
+  #subject {
+    height: 30px;
+  }
+  
+  button {
+    position: relative;
+    top: 100px;
+    left: 38%;
+    width: 300px;
+    height: 30px;
+    background-color: #F37A1F;
+    color: #ffffff;
+    border-color: #F37A1F;
+    border-radius: 30px;
+  }
+
+  .container {
+    display: flex;
+  }
+  .contactTypo1 {
+    position: relative;
+    top: 20px;
+    left: 30px;
+  }
+  
+ 
+  .contactTypo3{
+    position: relative;
+    top: 20px;
+    left: 55px;
+    width: 100px;
+    font-weight: lighter;
+  }
+  
+  .sec {
+    width: 450px;
+    height: 150px;
+    box-shadow: -5px -16px 19px -20px black;
+  
+  }
+  
+  .sec:hover {
+    background-color: #F37A1F;
+    color: #ffffff;
+  }
+  
+  .contactIcon {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  
+  /* End of  contact section*/
+
+  /*Start of footer*/
+  footer {
+    height: 150px;
+    background: #FFE4BC;
+    color: #FFFFFF;
+    opacity: .5;
+    position: relative;
+    top: 220px;
+    padding-bottom: 20px;
+  }
+  
+  .socialLinks{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  
+  .socialLinks a{
+    color: #000;
+  }
+
+  /*End of footer*/
