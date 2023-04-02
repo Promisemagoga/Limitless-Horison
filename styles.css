@@ -3,12 +3,19 @@
     margin: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
 /* Start of navigation bar*/
 .navBar{
   width: 100%;
    padding: 20px;
    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
    background-color: #fff;
+}
+
+.navBar .icon{
+  display: none;
 }
 
 .navBar a{
@@ -33,7 +40,6 @@
    height: 600px;
    
 }
-
 #home h1, p {
  text-align: center;
  position: relative;
@@ -63,6 +69,10 @@ top: 20px;
   align-items: center;
 }
 
+.cost li{
+  color: white;
+}
+
 .account{
  border: 2px solid #FFCD84;
  width: 350px;
@@ -75,6 +85,7 @@ top: 20px;
 .account li{
   position: relative;
   left: 20px;
+  color: white;
 }
 
 ul{
@@ -83,17 +94,25 @@ ul{
   font-family: 'Trirong', serif;
 }
 
-.about{
-  padding-top: 50px;
+/* End of home section*/
+
+.aboutContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 150px;
+  overflow: hidden;
+  padding-top: 80px;
 }
 
 
 #about{
     background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-/* End of home section*/
+
 
 /* Start of product section*/
 #product{
@@ -138,7 +157,7 @@ font-weight: bold;
   display: none;
   position: fixed;
   bottom: 20px;
-  left: 206vh;
+  left: 190vh;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -280,4 +299,158 @@ font-weight: bold;
     color: #000;
   }
 
+  footer h2{
+    font-family: 'Trirong', serif;
+    font-size: 15px;
+    color: #000;
+     text-align: center;
+     padding-top: 20px;
+  }
+
   /*End of footer*/
+
+  
+  @media screen and (max-width:480px){
+    .navBar {
+      overflow: hidden;
+      position: relative;
+      width: 40rem
+    }
+    
+    .navBar #myTopnav {
+      display: none;
+    }
+
+    #myTopnav {
+      text-align: center;
+      margin: 0%;
+    }
+
+    
+    .navBar a {
+      color: #F37A1F;
+      margin:  10px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+
+    .navBar a:hover{
+      color: #F37A1F;
+      background-color: transparent;
+      padding: 0px;
+    }
+    
+    .navBar a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  } 
+
+  @media screen and (max-width:480px){
+    #home{
+       width: 40rem;
+       height: 60rem;
+           
+    }
+
+    .payments{
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+    }
+
+    .aboutContainer{
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 50px;
+    }
+
+    #product{
+      background-color: #FFE4BC;
+      width: 40rem;
+      height: 80rem;
+      padding-top: 50px;
+    }
+.product tr{
+  display: flex;
+  flex-direction: column;
+}
+
+.product th{
+  display: none;
+}
+
+.product table, th, td{
+  border: 3px solid white;
+  padding: 20px 200px 20px 200px;
+  }
+
+.size{
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+font-weight: bold;
+
+}
+
+.price{
+  font-family: 'Trirong', serif;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 30rem;
+}
+
+.sec {
+  width: 40rem;
+  
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+  position: relative;
+  top: 60px;
+  bottom: 80px;
+}
+
+.text-field-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  position: relative;
+  top: 60px;
+}
+
+#name,
+#email {
+  width: 480px;
+  position: relative;
+  left: 2rem;
+}
+
+
+#subject,
+#message {
+  width: 500px;
+  position: relative;
+  left: 2rem;
+}
+
+footer {
+  width: 40rem;
+}
+    
+  }

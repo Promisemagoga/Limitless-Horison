@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!-- Load an icon to show hamburger menu on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <section class="mainContainer">
@@ -18,21 +20,25 @@
           </td>
           <td align="right">
             <nav style="margin-top: 16px; margin-bottom: 16px; margin-left: 30px;">
+              <div id="myTopnav">
               <a href="#home" style="margin: 10px">Home</a>
               <a href="#about" style="margin: 10px">About Us </a>
                 <a href="#product" style="margin: 10px">Our Product</a>
               <a href="#contact" style="margin: 10px"> Contact Us</a>
+            </div>
+            <a href="javaScript:void(0);" class="icon" onclick="menu()" style="position: relative;right: 5px;">
+              <i class="fa fa-bars"></i> 
             </nav>
           </td>
         </tr>
       </table>
       <button onclick="backTop()" id="myBtn"></button>
       <div id="home">
-        <h1 style="font-family: 'Sofia', sans-serif;">Limitless Horison</h1>
-        <p style="font-family: 'Trirong', serif;">Limitless horison (PTY) LTD is guaranteed to serve big and fresh eggs.<br> We belive in the mantra "Quality Over Quantity.</p>
+        <h1 style="font-family: 'Sofia', sans-serif;color: #F37A1F;">Limitless Horison</h1>
+        <p style="font-family: 'Trirong', serif; color: white;">Limitless horison (PTY) LTD is guaranteed to serve big and fresh eggs.<br> We belive in the mantra "Quality Over Quantity.</p>
         <div class="payments">
           <div class="cost">
-            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Additional Costs:</h1>
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;color: #F37A1F;">Additional Costs:</h1>
             <ul>
               <li>Airport storage: Unknown</li>
               <li>Custom duty: Unkown</li>
@@ -42,7 +48,7 @@
             </ul>
           </div>
           <div class="account">
-            <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;">Bank Account:</h1>
+            <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 25px; color: #F37A1F;">Bank Account:</h1>
             <ul>
               <li>Acc Name: Limitless Horison <br> (PTY) LTD</li>
               <li>Bank Name: ABSA bank</li>
@@ -56,20 +62,13 @@
       </div>
       <div id="about">
         <h1 style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 50px;text-decoration: underline #F37A1F;">About Us</h1>
-  <table style="width: 100%" class="about">
-            <tr>
-              <td style="position: relative; left: 50px";>
-               <p style="width: 500px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus erat vitae leo accumsan,
-                eget aliquam libero pharetra. Curabitur placerat, nunc a consequat cursus, arcu lorem ullamcorper odio, eu dignissim lectus magna et dui. 
-                Praesent vitae dapibus massa, id dictum orci. Maecenas eget condimentum orci, in placerat mauris. Pellentesque ultrices tincidunt quam, 
-                aliquam pharetra mauris imperdiet eget. Aenean dictum luctus laoreet. Suspendisse tristique sapien non consequat condimentum.</p>
-              </td>
-              <td align="right" style="position: relative; right: 50px;">
-             <img src="assets/images/egg-2580904__340.jpg" alt="" style="border-radius: 100%;width: 500px;height: 500px;">
-                </nav>
-              </td>
-            </tr>
-          </table>
+        <div class="aboutContainer">
+          <p style="width: 500px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus erat vitae leo accumsan,
+            eget aliquam libero pharetra. Curabitur placerat, nunc a consequat cursus, arcu lorem ullamcorper odio, eu dignissim lectus magna et dui. 
+            Praesent vitae dapibus massa, id dictum orci. Maecenas eget condimentum orci, in placerat mauris. Pellentesque ultrices tincidunt quam, 
+            aliquam pharetra mauris imperdiet eget. Aenean dictum luctus laoreet. Suspendisse tristique sapien non consequat condimentum.</p>
+          <img src="assets/images/egg-2580904__340.jpg" alt="" style="border-radius: 100%;width: 500px;height: 500px;">
+        </div>
       </div>
         <div id="product">
 <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;font-size: 50px;text-decoration: underline #F37A1F">Our Poduct</h1>
@@ -170,7 +169,7 @@
   <a href="#">Terms</a>
   <a href="#">Privacy Policy</a>
   </div>
-  <h2 style="font-family: 'Trirong', serif;font-size: 15px;color: #000; text-align: center;padding-top: 20px;">
+  <h2>
     Developer @<a href="https://www.linkedin.com/in/promise-tshegofatso" style="color: #F37A1F;"> Promise Tshegofatso Magoga</a></h2>
 </footer>
       <script src="index.js"></script>

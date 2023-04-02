@@ -20,3 +20,12 @@ function backTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function menu(){
+    var x = document.getElementById("myTopnav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
