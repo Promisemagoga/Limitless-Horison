@@ -400,7 +400,7 @@ footer {
     }
 
     #background {
-        height: 110vh !important;
+        height: 125vh !important;
     }
 
     #product{
@@ -408,5 +408,7 @@ footer {
         top: 50px;
     }
 
-    
+    footer {
+        height: 200px;
+      }
 }
